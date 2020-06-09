@@ -18,16 +18,32 @@ body {
     background-image: url(https://cdn.pixabay.com/photo/2015/12/08/00/39/foggy-1081915_1280.jpg);
     object-fit: cover;
     text-align: center;
+    position: relative;
+}
+
+.header-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 h1 {
     color: white;
     font-size: 300%;
-    line-height: 300px;
+    border: 5px solid white;
+    display: inline-block;
+    padding: 5px 20px;
+    font-weight: 400;
 }
 
 h2 {
     color: white;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 nav {
@@ -35,13 +51,22 @@ nav {
     background-color: #696969;
     margin-bottom: 10px;
 }
+
+ul {
+    text-align: center;
+}
+
 li {
     color: white;
     font-weight: bold;
     display: inline-block;
     line-height: 50px;
-    text-align: center;
     padding: 0 15px;
+}
+/* ASIDE */
+aside {
+    width: 20%;
+    float: left;
 }
 
 .clearfix::after {
@@ -51,45 +76,69 @@ li {
 }
 
 .left {
-    height: 700px;
-    width: 25%;
     background-color: white;
-    float: left;
     border-radius: 5px;
 }
 
-i {
-    color: white;
-    font-size: 48px;
-    background-color: orange;
-    border-radius: 1px;
-    vertical-align: top;
-
+.left .i {
+    font-size: 20px;
 }
-h3 {
+
+.i {
+    color: white;
+    background-color: orange;
+    border: 2px solid orange;
+    border-radius: 1px;
+    padding: 0 2px;
+    vertical-align: top;
+    margin-top: 5px;
+    margin-left: 6px;
+}
+
+.left h3 {
+    color: rgba(0, 0, 0, 0.7);
     display: inline-block;
-    text-align: center;
     font-size: 150%;
 }
 
+a {
+    color: rgba(0, 128, 0, 0.9);
+    font-size: 130%;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+/* MAIN */
 main {
-    height: 1500px;
-    width: 50%;
+    width: 60%;
     float: left;
     padding: 0 40px;
 }
 
 main div {
-height: 500px;
+height: 400px;
 background-color: white;
 border-radius: 5px;
 }
 
+.h3 {
+    color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    font-size: 150%;
+    padding: 30px 20px;
+}
+
+.p {
+    color: Black;
+    font-size: 120%;
+    padding: 20px 15px;
+    line-height: 1.6;
+}
+/* ASIDE 2 */
 .right {
-    height: 550px;
-    width: 25%;
     background-color: white;
-    float: left;
     border-radius: 5px;
     margin-bottom: 40px;
 }
@@ -98,4 +147,19 @@ footer {
     height: 300px;
     background-color: white;
     border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: rgba(169, 169, 169, 1);
+    border-bottom: 2px solid rgb(169, 169, 169);
+    margin: 0 5px;
+}
+
+footer div {
+    color: rgba(169, 169, 169, 1);
+    display: inline-block;
+    padding: 110px 150px;
+    font-size: 40px;
 }
