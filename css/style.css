@@ -23,9 +23,15 @@ body {
 
 .header-content {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.header-content i {
+    display: block;
+    color: white;
+    font-size: 50px;
 }
 
 h1 {
